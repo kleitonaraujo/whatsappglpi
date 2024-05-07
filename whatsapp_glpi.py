@@ -15,7 +15,8 @@ class Ticket(Base):
  
 
 def monitorar_chamados():
-    engine = create_engine('mysql+mysqlconnector://glpi:'A0380814C8'@localhost/glpi10')
+    engine = create_engine('mysql+mysqlconnector://glpi:"A0380814C8"@localhost/glpi10')
+
     Session = sessionmaker(bind=engine)
 
     while True:
